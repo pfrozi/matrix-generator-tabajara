@@ -23,7 +23,7 @@ void help(){
     printf("\na11 a12 ... a1M");
     printf("\na21 a22 ... a2M");
     printf("\n... ... ... ...");
-    printf("\naN1 aN2 ... a1M");
+    printf("\naN1 aN2 ... aNM");
     printf("\n{{FINAL DO ARQUIVO}}");
 
     printf("\n\nSaida do programa (matriz M): ");
@@ -32,7 +32,7 @@ void help(){
     printf("\na11 a12 ... a1M");
     printf("\na21 a22 ... a2M");
     printf("\n... ... ... ...");
-    printf("\naN1 aN2 ... a1M\n\n");
+    printf("\naN1 aN2 ... aNM\n\n");
 
 }
 

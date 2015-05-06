@@ -62,7 +62,7 @@ Matrix* Matrix::matrixProduct(Matrix* matrix){
 
             int val = 0;
 
-            for(int k=0;k<rows_result;k++){
+            for(int k=0;k<this->getColumns();k++){
 
                 val += this->getPosMatrix(i,k) * this->getPosMatrix(k, j);
             }

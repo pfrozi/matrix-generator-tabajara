@@ -98,16 +98,15 @@ int main(int argc, char* argv[])
             }
         }
 
-        int in1_columns = (rand() % (rowsM+30))+abs(rowsM-30);
-        int in2_rows = (rand() % (columnsM+30))+abs(columnsM-30);
+        int n_rdm = (rand() % 30)+rowsM;
 
         Matrix* in1 = new Matrix();
         Matrix* in2 = new Matrix();
 
         in1->setRows(rowsM);
-        in1->setColumns(in1_columns);
+        in1->setColumns(n_rdm);
 
-        in2->setRows(in2_rows);
+        in2->setRows(n_rdm);
         in2->setColumns(columnsM);
 
         in1->initMatrix();
@@ -116,11 +115,11 @@ int main(int argc, char* argv[])
         in1->setRandom();
         in2->setRandom();
 
-        Matrix* result = in1->matrixProduct(in2);
+        //Matrix* result = in1->matrixProduct(in2);
 
         in1->exportToFile(nameA);
         in2->exportToFile(nameB);
-        result->exportToFile(nameM);
+        //result->exportToFile(nameM);
     }
 
     return RETURN_SUCCESS;

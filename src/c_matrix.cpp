@@ -96,7 +96,12 @@ void Matrix::exportToFile(std::string path){
         for(int i=0;i<this->rows;i++){
 
             for(int j=0;j<this->columns;j++){
-                fprintf(pfile,"%d ",this->matrix[i][j]);
+                if(j<columns-1){
+                    fprintf(pfile,"%d ",this->matrix[i][j]);
+                }
+                else{
+                    fprintf(pfile,"%d",this->matrix[i][j]);
+                }
             }
 
             fprintf(pfile,"\n");

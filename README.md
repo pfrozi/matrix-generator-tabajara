@@ -1,6 +1,8 @@
 ## README
 
-    Gerador de matrizes com valores randomicos a partir da estrutura de uma matriz produto. Dado uma matriz M nxm, são geradas duas matrizes A nxk e B jxm com valores aleatórios entre 1 e 100, tal que M = A x B.
+    Gerador de matrizes com valores randomicos a partir da estrutura de uma matriz produto. 
+    Dado uma matriz M nxm, são geradas duas matrizes A nxk e B jxm com valores aleatórios entre 1 e 100, 
+    tal que M = A x B.
     Help: 
     ./matrix-generator-tabajara -h
     Exec: 
